@@ -8,7 +8,7 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed to a modern font */
     background-color: #f4f4f4;
 }
 
@@ -28,6 +28,7 @@ header {
     padding: 20px;
     background-color: #333;
     color: white;
+    width: 100%; /* Stretch to edges */
 }
 
 .profile-container {
@@ -44,12 +45,12 @@ header {
 }
 
 .header-text h1 {
-    font-size: 24px;
+    font-size: 28px; /* Larger font */
     margin: 0;
 }
 
 .header-text p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 5px 0 0;
 }
 
@@ -59,6 +60,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 nav ul {
@@ -66,16 +68,24 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
+    justify-content: space-evenly; /* Spread out links */
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 .hamburger {
@@ -91,22 +101,43 @@ nav ul li a {
     margin: 20px 0;
 }
 
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin: 10px 0;
+}
+
+/* Find Me Online Section */
+#about ul li a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#about ul li a i {
+    margin-right: 8px;
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    width: 100%; /* Stretch to edges */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-text h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .header-text p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     nav ul {
@@ -130,15 +161,25 @@ footer {
     nav.active ul {
         display: block;
     }
+
+    #about ul li a {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 5px;
+    }
 }
 
+/* Mobile Footer and Nav Adjustments */
 @media (max-width: 480px) {
     .header-text h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .header-text p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     footer {
