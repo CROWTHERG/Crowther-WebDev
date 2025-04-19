@@ -206,8 +206,20 @@ footer {
     }
 
     .profile-container {
-        align-items: flex-start; /* Slightly tighten vertical spacing */
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
     }
+    
+    .hamburger {
+        display: block;
+        font-size: 26px;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+        align-self: flex-start;
+    }
+    
 
     header {
         flex-direction: column;
