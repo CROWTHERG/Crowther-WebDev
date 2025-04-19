@@ -31,6 +31,9 @@ html, body {
 /* Header Section */
 header {
     width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #333;
@@ -95,12 +98,11 @@ nav ul li a:hover {
 }
 
 .hamburger {
-    display: block;
+    display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
-    margin-left: auto;
-    align-self: center;
+    margin-left: 20px;
 }
 
 /* About Section */
