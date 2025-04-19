@@ -6,8 +6,8 @@
 }
 
 body, p, li {
-    line-height: 1.6; /* Improves readability */
-    margin-bottom: 10px; /* Adds spacing after lines */
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 footer, header {
@@ -17,8 +17,9 @@ footer, header {
 html, body {
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif; /* Changed to a modern font */
-    background-color: #f4f4f4;
+    font-family: 'Orbitron', sans-serif; /* Futuristic Font */
+    background-color: #0a0a0a; /* Dark Background */
+    color: #fff; /* White text for contrast */
 }
 
 /* Layout Container */
@@ -36,8 +37,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
-    color: white;/* Stretch to edges */
+    background-color: #222; /* Dark Header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 .profile-container {
@@ -51,16 +52,20 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
+    border: 2px solid #00ffcc; /* Neon Border */
 }
 
 .header-text h1 {
-    font-size: 28px; /* Larger font */
+    font-size: 28px;
     margin: 0;
+    color: #00ffcc; /* Neon Text Color */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; /* Glow Effect */
 }
 
 .header-text p {
     font-size: 18px;
     margin: 5px 0 0;
+    color: #aaa; /* Slightly dimmed for contrast */
 }
 
 /* Navigation */
@@ -78,7 +83,7 @@ nav ul {
     margin: 0;
     padding: 0;
     width: 100%;
-    justify-content: space-evenly; /* Spread out links */
+    justify-content: space-evenly;
 }
 
 nav ul li {
@@ -86,21 +91,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #00ffcc;
+    transform: scale(1.1); /* Scale effect on hover */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
 }
 
 .hamburger {
     display: none;
     font-size: 30px;
-    color: white;
+    color: #fff;
     cursor: pointer;
     margin-left: 20px;
 }
@@ -108,7 +115,7 @@ nav ul li a:hover {
 /* About Section */
 #about {
     margin: 20px auto;
-    max-width: 1100px; /* Optional: Limit the width */
+    max-width: 1100px;
     padding: 0 15px;
 }
 
@@ -123,14 +130,14 @@ nav ul li a:hover {
 
 /* Services Section */
 #services {
-    margin: 20px auto; /* Centers the section */
-    max-width: 1100px; /* Optional: Limit the width */
-    padding: 0 15px; /* Adds space on the sides */
+    margin: 20px auto;
+    max-width: 1100px;
+    padding: 0 15px;
 }
 
 #services ul {
-    padding-left: 20px; /* adds spacing to the left of bullets */
-    list-style-position: inside; /* makes bullets align with text */
+    padding-left: 20px;
+    list-style-position: inside;
 }
 
 /* Find Me Online Section */
@@ -138,6 +145,7 @@ nav ul li a:hover {
     display: inline-block;
     margin: 5px;
     font-size: 16px;
+    color: #00ffcc; /* Neon Link Color */
 }
 
 #about ul li a i {
@@ -146,13 +154,14 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222;
+    color: #fff;
     margin-left: calc(-50vw + 50%);
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    width: 100vw; /* Stretch to edges */
+    width: 100vw;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 /* Responsive Design */
@@ -222,16 +231,16 @@ footer {
         justify-content: space-between;
         margin-bottom: 10px;
     }
-    
+
     .hamburger {
         display: block;
         font-size: 26px;
-        color: white;
+        color: #fff;
         cursor: pointer;
         margin-left: auto;
         align-self: center;
     }
-    
+
     header {
         flex-direction: column;
         align-items: flex-start;
