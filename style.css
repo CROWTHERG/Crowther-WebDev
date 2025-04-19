@@ -190,30 +190,45 @@ footer {
 
 /* Mobile Footer and Nav Adjustments */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    .header-text h1 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .header-text p {
+        font-size: 13px;
+    }
+
+    #profile-picture {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
     }
 
     .profile-container {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
-
-    .header-text {
-        flex: 1;
-    }
-
+    
     .hamburger {
         display: block;
         font-size: 26px;
         color: white;
         cursor: pointer;
-        align-self: flex-start;
         margin-left: 10px;
+        align-self: flex-start;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text {
+        flex: 1;
     }
 
     nav {
