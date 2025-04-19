@@ -17,9 +17,13 @@ footer, header {
 html, body {
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Orbitron', sans-serif; /* Futuristic Font */
+    font-family: 'inter', sans-serif; /* Futuristic Font */
     background-color: #0a0a0a; /* Dark Background */
     color: #fff; /* White text for contrast */
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif; /* Keep futuristic style for headers */
 }
 
 /* Layout Container */
