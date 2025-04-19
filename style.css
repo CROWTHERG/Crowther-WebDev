@@ -38,6 +38,9 @@ body.landing-dark {
 
 .landing-main {
     padding: 100px 20px;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Subtle gradient */
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); /* Adds depth */
 }
 
 .intro-text {
@@ -82,7 +85,6 @@ body.landing-dark {
     }
 }
 
-
 /* Header Section */
 header {
     width: 100vw;
@@ -120,6 +122,48 @@ header {
     font-size: 18px;
     margin: 5px 0 0;
     color: #aaa; /* Slightly dimmed for contrast */
+}
+
+/* Boxes style */
+.landing-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #222;
+    padding: 30px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px #00ffcc);
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #ccc;
 }
 
 /* Navigation */
