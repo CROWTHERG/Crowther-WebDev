@@ -29,6 +29,60 @@ html, body {
     padding: 0 15px;
 }
 
+body.landing-dark {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.landing-main {
+    padding: 100px 20px;
+}
+
+.intro-text {
+    font-size: 2.5rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #00ffcc, #0088ff);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* Header Section */
 header {
     width: 100vw;
