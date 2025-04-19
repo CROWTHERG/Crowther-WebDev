@@ -26,6 +26,18 @@ h1, h2, h3 {
     font-family: 'Orbitron', sans-serif; /* Keep futuristic style for headers */
 }
 
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.4s ease-in-out;
+}
+.container {
+    padding-top: 140px; /* Push content below fixed header */
+}
+
+
 /* Layout Container */
 .container {
     max-width: 1200px;
