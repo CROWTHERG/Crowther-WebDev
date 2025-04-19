@@ -1,12 +1,18 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Global Reset & Defaults */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Layout Container */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -14,6 +20,7 @@ body {
     padding: 0 15px;
 }
 
+/* Header Section */
 header {
     display: flex;
     justify-content: space-between;
@@ -46,6 +53,7 @@ header {
     margin: 5px 0 0;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -78,10 +86,12 @@ nav ul li a {
     margin-left: 20px;
 }
 
+/* About Section */
 #about {
     margin: 20px 0;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
