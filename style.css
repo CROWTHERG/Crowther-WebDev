@@ -40,6 +40,11 @@ body.landing-dark {
     text-align: center;
 }
 
+.order {
+    align-items: center;
+    text-align: center;
+}
+
 .landing-main {
     padding: 100px 20px;
     background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Subtle gradient */
