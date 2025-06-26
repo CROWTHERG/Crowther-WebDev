@@ -45,6 +45,9 @@ body.landing-dark {
     background: linear-gradient(135deg, #1e1e1e, #2a2a2a); /* Subtle gradient */
     color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); /* Adds depth */
+    width: 100%; /* Ensure it spans the full width */
+    margin: 0 auto; /* Center the content */
+    max-width: 1200px; /* Optional: Limit the width for larger screens */
 }
 
 .intro-text {
@@ -528,4 +531,49 @@ footer {
     nav.active ul {
         display: block;
     }
+}
+
+
+
+.projects-grid.minimal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 60px 20px;
+}
+
+.project-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.15);
+  max-width: 300px;
+  width: 100%;
+}
+
+.project-thumb:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #222;
+}
+
+.project-thumb h3 {
+  font-size: 1.2rem;
+  color: #00ffcc;
+  padding: 15px;
+  text-align: center;
+  background-color: #111;
+  width: 100%;
 }
