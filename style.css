@@ -92,6 +92,10 @@ body.landing-dark {
     font-size: 1.1rem;
 }
 
+.contact-info .cta-button {
+    color: #333333;
+}
+
 .contact-info li, .services-overview li {
     margin: 10px 0;
 }
@@ -182,6 +186,25 @@ body.landing-dark {
 .cta-button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #66ccff; /* Softer glow */
+}
+
+/* Why Work Section */
+.why-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.why-work h2 {
+    font-size: 23px;
+    text-align: center;
+    color: #3399ff;
+}
+
+.why-work li {
+    list-style: none;
+    margin-top: 23px;
 }
 
 @keyframes fadeInUp {
@@ -617,4 +640,41 @@ footer {
   text-align: center;
   background-color: #ffffff;
   width: 100%;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
