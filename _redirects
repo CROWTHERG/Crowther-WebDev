@@ -1,1 +1,2 @@
 /:slug     /:slug.html     200
+https://crowther-webdev.netlify.app/* https://www.crowthertech.name.ng/:splat 301!
